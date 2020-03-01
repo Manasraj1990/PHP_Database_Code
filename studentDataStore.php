@@ -1,4 +1,8 @@
 <?php
+$name= $_POST['name'];
+$rollno= $_POST['rollno'];
+$date= $_POST['date'];
+
 $servername='localhost';
 $username='root';
 $password= 'manas98077raj';
@@ -21,7 +25,7 @@ if($conn->connect_error)
    }
 
 $sql="INSERT INTO studentinsert(id,name, rollno,date )
-VALUES ('','manas','12bd','24/3/2020')";
+VALUES ('','$name','$rollno','$date')";
 
 $run= mysqli_query($conn,$sql);
 if ($run === TRUE)
