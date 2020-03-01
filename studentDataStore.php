@@ -27,6 +27,7 @@ if($conn->connect_error)
 $sql="INSERT INTO studentinsert(id,name, rollno,date )
 VALUES ('','$name','$rollno','$date')";
 
+
 $run= mysqli_query($conn,$sql);
 if ($run === TRUE)
 {
